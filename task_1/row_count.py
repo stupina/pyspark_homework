@@ -8,8 +8,8 @@ spark = SparkSession.builder.appName(
 
 
 def main():
-    dir = os.path.dirname(os.path.abspath(__file__))
-    filepath = f'{dir}/countries.csv'
+    directory = os.path.dirname(os.path.abspath(__file__))
+    filepath = f'{directory}/countries.csv'
 
     df = spark.read.csv(
         filepath,

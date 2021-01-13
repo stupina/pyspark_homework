@@ -3,11 +3,11 @@ from pyspark.sql.functions import col, explode
 
 
 def is_struct(dtype):
-    return dtype.startswith("struct")
+    return dtype.startswith('struct')
 
 
 def is_array(dtype):
-    return dtype.startswith("array")
+    return dtype.startswith('array')
 
 
 def unpuck(dataframe):
